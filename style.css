@@ -1,3 +1,10 @@
+html {
+    box-sizing: border-box;
+}
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -28,7 +35,6 @@ a:hover {
 }
 
 .bloc {
-    width: 100%;
     clear: both;
     background: 50% 50% no-repeat;
     padding: 0 50px;
@@ -137,7 +143,6 @@ a:hover {
 }
 
 .d-bloc .a-btn:hover,
-.d-bloc .navbar a:hover,
 .d-bloc .navbar-brand:hover,
 .d-bloc a:hover .icon-sm,
 .d-bloc a:hover .icon-md,
@@ -218,7 +223,6 @@ a:hover {
 
 .d-bloc .panel .a-btn,
 .l-bloc .a-btn,
-.l-bloc .navbar a,
 .l-bloc .navbar-brand,
 .l-bloc a .icon-sm,
 .l-bloc a .icon-md,
@@ -236,7 +240,6 @@ a:hover {
 
 .d-bloc .panel .a-btn:hover,
 .l-bloc .a-btn:hover,
-.l-bloc .navbar a:hover,
 .l-bloc .navbar-brand:hover,
 .l-bloc a:hover .icon-sm,
 .l-bloc a:hover .icon-md,
@@ -266,6 +269,10 @@ a:hover {
 
 .voffset {
     margin-top: 30px;
+}
+
+.voffset p {
+    font-style: italic;
 }
 
 .voffset-lg {
@@ -676,12 +683,35 @@ a {
 
 /* MODIFICATIONS */
 
+
+
+
+
+nav li a {
+    color: black;
+    font-weight: 700;
+    border-top: 2px solid transparent;
+    transition: 0s;
+    padding: 30px;
+    
+}
+
+nav li a:hover {
+    border-top-color: #F3976C;
+    color: black
+    
+}
+
+ul li {
+    list-style: none;
+}
+
 .citation {
     font-size: 22px;
     color: black;
 }
 
-h1::after {
+h1::after, .information p::after, .information a::after{
     content:"";
     display: block;
     border: 2px solid #F3976C;
@@ -718,14 +748,103 @@ h1 {
     color: black;
 }
 
+.logo {
+    height: 40px;
+}
+
+.contact-h1 {
+    color: white;
+    font-size: 50px;
+}
+
+h2 {
+    color: white;
+}
+
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-container {
+    display: flex;
+    gap: 100px;
+    align-items: center;
+}
+
+.information {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    
+}
+
+p {
+    font-size: 22px;
+    text-align: center;
+    color: black;
+}
+
+.information p, .information a {
+    font-size: 25px;
+    text-align: center;
+    color: black;
+}
+
+.form-group label {
+    font-size: 18px;
+    width: 100%;
+    text-align: center
+}
+
+footer p, footer a {
+    color: white;
+}
+
+footer p {
+    font-size: 20px;
+}
+
+.tight-width-whitespace  h2 {
+    font-weight: 800;
+}
+
+.tight-width-whitespace  p {
+    line-height: 25px;
+}
+
+#bloc-3-what-i-do a {
+    background-color: #F3976C;
+    display: block;
+    margin: auto;
+    padding: 10px;
+    width: 40%;
+    text-decoration: none;
+    border-radius: 50px;
+    font-size: 20px;
+    font-weight: 600
+}
+
+#bloc-3-what-i-do a:hover {
+    background-color: #c27956;
+}
+
+
+
+
+
 
 /* END OF MODIFICATIONS */
 
 
 .tight-width-whitespace {
-    max-width: 600px;
-    margin: auto auto auto auto;
+    margin: auto 
 }
+
+
 
 
 
@@ -739,8 +858,10 @@ h1 {
 }
 
 .social {
-    max-width: 400px;
-    margin: auto auto auto auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
 }
 
 
@@ -767,7 +888,7 @@ h4 {
 }
 
 .white {
-    color: #FFFFFF!important;
+    color: #FFFFFF;
 }
 
 .portfolio-thumb {
@@ -790,7 +911,7 @@ h4 {
 
 .bold-link {
     font-weight: 900;
-    text-decoration: underline!important;
+    text-decoration: none;
 }
 
 .bgc-white {
@@ -805,10 +926,6 @@ h4 {
     background-color: #F3976C;
 }
 
-.tc-white {
-    color: #F3976C!important;
-}
-
 .btn-atomic-tangerine {
     background: #F3976C;
     color: #FFFFFF!important;
@@ -821,10 +938,6 @@ h4 {
 
 .ltc-white {
     color: #FFFFFF!important;
-}
-
-.ltc-white:hover {
-    color: #cccccc!important;
 }
 
 .ltc-atomic-tangerine {
@@ -871,7 +984,7 @@ h4 {
 
 @media (max-width: 992px) and (min-width: 768px) {
     .navbar .nav {
-        max-width: 80%
+        max-width: 100%
     }
     .nav-center.navbar .nav {
         max-width: 100%
@@ -918,6 +1031,8 @@ h4 {
         padding-right: constant(safe-area-inset-right);
     }
 }
+
+
 
 @media (max-width: 767px) {
     .page-container {
