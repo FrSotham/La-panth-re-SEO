@@ -1,0 +1,29 @@
+.services {
+    margin-top: 0px;
+}
+
+h1 {
+    font-size: 30px;
+    max-width: 400px;
+    
+}
+
+.bloc-md {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.conatiner {
+    width: 100%;
+}
+
+.activities-description {
+    font-size: 18px;
+    
+}
+
+.med-width-whitespace {
+    max-width: 700px;
+}
