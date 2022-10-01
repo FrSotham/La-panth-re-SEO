@@ -34,6 +34,20 @@ h1 {
     gap: 45px;
 }
 
+#bloc-3-what-i-do button, #bloc-contact button, #bloc-1-hero button {
+    width: 300px;
+}
+
+#bloc-3-what-i-do h2 {
+    font-size: 24px;
+}
+
+.partenaires-list ul {
+    flex-direction: column;
+    align-items: center;
+}
+
+
 
 
 
