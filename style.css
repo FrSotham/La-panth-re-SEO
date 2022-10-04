@@ -14,6 +14,237 @@ body {
     -moz-osx-font-smoothing: grayscale;
 }
 
+/* MODIFICATIONS */
+
+nav li a {
+    color: black;
+    font-weight: 700;
+    border-top: 2px solid transparent;
+    transition: 0s;
+    padding: 30px;
+    
+}
+
+nav li a:hover {
+    border-top-color: #F3976C;
+    color: black
+    
+}
+
+ul li {
+    list-style: none;
+}
+
+.citation {
+    font-size: 22px;
+    color: black;
+}
+
+#bloc-2-services h1::after, .information p::after, .information a::after{
+    content:"";
+    display: block;
+    border: 2px solid #F3976C;
+    margin: 10px;
+    border-radius: 50%;;
+}
+
+.citation__name {
+    color: rgba(0, 0, 0, 0.76);
+}
+
+
+.activities-description {
+    color: black;
+    font-size: 18px;
+    max-width: 400px;
+    white-space: normal;
+    
+}
+
+
+h1 {
+    font-size: 35px;
+    font-family: "helvetica";
+    font-weight: 500;
+    color: black;
+}
+
+#bloc-2-services  h2 {
+    font-size: 22px;
+    line-height: 1.4em;
+    font-family: "helvetica";
+    font-weight: 800;
+    color: black;
+}
+
+.logo {
+    height: 40px;
+}
+
+.contact-h1 {
+    color: white;
+    font-size: 50px;
+}
+
+#bloc-3-what-i-do h2, #bloc-1-hero h2, #bloc-contact h2, #bloc-6 h2 {
+    color: white;
+}
+
+h3 {
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #000000;
+    border: 1px solid grey;
+    padding: 15px;
+}
+
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-container {
+    display: flex;
+    gap: 100px;
+    align-items: center;
+}
+
+.information {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    
+}
+
+p {
+    font-size: 22px;
+    text-align: center;
+    color: black;
+}
+
+.information p, .information a {
+    font-size: 25px;
+    text-align: center;
+    color: black;
+}
+
+.form-group label {
+    font-size: 18px;
+    width: 100%;
+    text-align: center
+}
+
+.tight-width-whitespace  h2 {
+    font-weight: 800;
+}
+
+.tight-width-whitespace  p {
+    line-height: 25px;
+}
+
+#bloc-3-what-i-do button, #bloc-contact button, #bloc-1-hero button {
+    background-color: #F3976C;
+    display: block;
+    margin: auto;
+    padding: 10px;
+    width: 40%;
+    text-decoration: none;
+    border-radius: 50px;
+    font-size: 20px;
+    font-weight: 600;
+    border: none;
+}
+
+#bloc-3-what-i-do button:hover, #bloc-contact button:hover, #bloc-1-hero button:hover {
+    background-color: #c27956;
+}
+
+.citation h2 {
+    color: black;
+    font-weight: 800;
+}
+
+.portofolio-photo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+#bloc-4-portfolio .mg-md {
+    margin-top: 0px;
+}
+
+#bloc-contact h2 {
+    font-weight: 800;
+}
+
+.social {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.social-item span::before {
+    color: #424242;  
+}
+
+.social-container p {
+    color: #424242;  
+}
+
+.social-container {
+    padding: 20px;
+}
+
+footer p {
+    font-size: 20px;
+    font-weight: 600;
+    color: #242424;
+}
+
+.partenaires-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+    padding: 20px;
+    background-color: #c27956;
+    
+}
+
+.partenaires-list {
+    width: 100%;
+}
+
+.partenaires-list a {
+   color: #242424;
+}
+
+
+.partenaires-list ul {
+    padding: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    text-decoration: underline;
+    font-size: 18px;
+}
+
+.form-container button a {
+    color: #424242;
+}
+
+
+/* END OF MODIFICATIONS */
+
 a,
 button {
     transition: all .3s ease-in-out;
@@ -680,243 +911,6 @@ a {
     max-width: 520px;
     margin: auto auto auto auto;
 }
-
-/* MODIFICATIONS */
-
-
-
-
-
-nav li a {
-    color: black;
-    font-weight: 700;
-    border-top: 2px solid transparent;
-    transition: 0s;
-    padding: 30px;
-    
-}
-
-nav li a:hover {
-    border-top-color: #F3976C;
-    color: black
-    
-}
-
-ul li {
-    list-style: none;
-}
-
-.citation {
-    font-size: 22px;
-    color: black;
-}
-
-#bloc-2-services h1::after, .information p::after, .information a::after{
-    content:"";
-    display: block;
-    border: 2px solid #F3976C;
-    margin: 10px;
-    border-radius: 50%;;
-}
-
-.citation__name {
-    color: rgba(0, 0, 0, 0.76);
-}
-
-
-.activities-description {
-    color: black;
-    font-size: 18px;
-    max-width: 400px;
-    white-space: normal;
-    
-}
-
-
-h1 {
-    font-size: 35px;
-    font-family: "helvetica";
-    font-weight: 500;
-    color: black;
-}
-
-#bloc-2-services  h2 {
-    font-size: 22px;
-    line-height: 1.4em;
-    font-family: "helvetica";
-    font-weight: 800;
-    color: black;
-}
-
-.logo {
-    height: 40px;
-}
-
-.contact-h1 {
-    color: white;
-    font-size: 50px;
-}
-
-#bloc-3-what-i-do h2, #bloc-1-hero h2, #bloc-contact h2, #bloc-6 h2 {
-    color: white;
-}
-
-h3 {
-    font-size: 18px;
-    text-transform: uppercase;
-    font-weight: 700;
-    color: #000000;
-    border: 1px solid grey;
-    padding: 15px;
-}
-
-.contact-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.form-container {
-    display: flex;
-    gap: 100px;
-    align-items: center;
-}
-
-.information {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-    
-}
-
-p {
-    font-size: 22px;
-    text-align: center;
-    color: black;
-}
-
-.information p, .information a {
-    font-size: 25px;
-    text-align: center;
-    color: black;
-}
-
-.form-group label {
-    font-size: 18px;
-    width: 100%;
-    text-align: center
-}
-
-.tight-width-whitespace  h2 {
-    font-weight: 800;
-}
-
-.tight-width-whitespace  p {
-    line-height: 25px;
-}
-
-#bloc-3-what-i-do button, #bloc-contact button, #bloc-1-hero button {
-    background-color: #F3976C;
-    display: block;
-    margin: auto;
-    padding: 10px;
-    width: 40%;
-    text-decoration: none;
-    border-radius: 50px;
-    font-size: 20px;
-    font-weight: 600;
-    border: none;
-}
-
-#bloc-3-what-i-do button:hover, #bloc-contact button:hover, #bloc-1-hero button:hover {
-    background-color: #c27956;
-}
-
-.citation h2 {
-    color: black;
-    font-weight: 800;
-}
-
-.portofolio-photo {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin-top: 30px;
-}
-
-#bloc-4-portfolio .mg-md {
-    margin-top: 0px;
-}
-
-#bloc-contact h2 {
-    font-weight: 800;
-}
-
-.social {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 30px;
-}
-
-.social-item span::before {
-    color: #424242;  
-}
-
-.social-container p {
-    color: #424242;  
-}
-
-.social-container {
-    padding: 20px;
-}
-
-footer p {
-    font-size: 20px;
-    font-weight: 600;
-    color: #242424;
-}
-
-.partenaires-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin-top: 15px;
-    padding: 20px;
-    background-color: #c27956;
-    
-}
-
-.partenaires-list {
-    width: 100%;
-}
-
-.partenaires-list a {
-   color: #242424;
-
-}
-
-
-.partenaires-list ul {
-    padding: 0;
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-    text-decoration: underline;
-    font-size: 18px;
-}
-
-.form-container button a {
-    color: #424242;
-}
-
-
-/* END OF MODIFICATIONS */
-
 
 .tight-width-whitespace {
     margin: auto 
